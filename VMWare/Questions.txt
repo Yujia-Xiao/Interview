@@ -1,0 +1,41 @@
+Quesitons:
+
+1.Object Oriented Programming‘s feature.
+Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A distinguishing feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self"). In OO programming, computer programs are designed by making them out of objects that interact with one another.[1][2] There is significant diversity in object-oriented programming, but most popular languages are class-based, meaning that objects are instances of classes, which typically also determines their type.
+
+Many of the most widely used programming languages are multi-paradigm programming languages that support object-oriented programming to a greater or lesser degree, typically in combination with imperative, procedural programming. Significant object-oriented languages include Python, C++, Objective-C, Smalltalk, Delphi, Java, Swift, C#, Perl, Ruby and PHP.
+
+2.the function of Syncrized
+The Java programming language provides two basic synchronization idioms: synchronized methods and synchronized statements. The more complex of the two, synchronized statements, are described in the next section. This section is about synchronized methods.
+
+To make a method synchronized, simply add the synchronized keyword to its declaration:
+
+public class SynchronizedCounter {
+    private int c = 0;
+
+    public synchronized void increment() {
+        c++;
+    }
+
+    public synchronized void decrement() {
+        c--;
+    }
+
+    public synchronized int value() {
+        return c;
+    }
+}
+If count is an instance of SynchronizedCounter, then making these methods synchronized has two effects:
+
+First, it is not possible for two invocations of synchronized methods on the same object to interleave. When one thread is executing a synchronized method for an object, all other threads that invoke synchronized methods for the same object block (suspend execution) until the first thread is done with the object.
+Second, when a synchronized method exits, it automatically establishes a happens-before relationship with any subsequent invocation of a synchronized method for the same object. This guarantees that changes to the state of the object are visible to all threads.
+Note that constructors cannot be synchronized — using the synchronized keyword with a constructor is a syntax error. Synchronizing constructors doesn't make sense, because only the thread that creates an object should have access to it while it is being constructed.
+
+
+3.Multi thread programming
+
+4.OS ： Lock, how to prevent dead lock
+
+5. what is  virtual  memory？
+
+6. design patterns of software development？
