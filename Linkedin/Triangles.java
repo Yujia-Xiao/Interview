@@ -1,5 +1,7 @@
 /*
 triangles O(n^3) solution
+1. 输出array能组成triangle的数目。
+2. 输出所有的能组成的triangle。time complexity，优化等。
 */
 
 public List<List<Integer>> Triangle(int[] nums){

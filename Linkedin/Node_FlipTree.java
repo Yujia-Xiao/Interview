@@ -6,7 +6,7 @@ Node FlipTree ( Node root )
     // Working base condition
     if( root.Left == NULL && root.Right == NULL) 
     {
-        return root.Left;
+        return root;
     }
     
     Node newRoot = FlipTree(root.Left);
