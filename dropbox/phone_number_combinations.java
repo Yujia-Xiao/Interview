@@ -4,12 +4,13 @@
 /*
 2-abc 3-def 4-ghi 5-jkl 6-mno 7-pqrs 8-tuv 9-wxyz
 */
-public List<String> phone_number(int[] num){
+public List<String> phone_number(int[] num, Set<String> dic){
     //614-615-9072  ----10
-    List<>
+    List<String> ans = new LinkedList<String>();
     if(num.length!=10)
     //combinations
-    //
+    // ---> change
+    for all
     
 
 }
@@ -44,7 +45,6 @@ public List<String> phone_number(int[] num){
             }
         }
         dfs(dp,temp,s.length(),ans);
-        //dfs2(dp,temp,start,s.length(),ans);
         return ans;
     }
     
